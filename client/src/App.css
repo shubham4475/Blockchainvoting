@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.sidebar {
+  display: block;
+  top: 70px;
+  background-color: #f1f2f6;
+  width: 27vw;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  padding: 10px;
+  margin: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.content {
+  margin-left: 27.0vw;
+  padding: 1px 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  padding: 10px;
+}
+
+.center-elements {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width:1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 20px;
+    width: 100vw;
+  }
+
+  .center-elements {
+    left: 50%;
+  }
+
+  .dropbtn {
+    display: block;
+  }
+}
+
+hr {
+  visibility: hidden;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fca40088;
+  position: fixed;
+  overflow: auto;
+  z-index: 4;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  box-shadow: 0 1px 29px 1px rgb(187, 155, 85);
+
+
+}
+
+.navbar a {
+  text-align: center;
+  padding: 4px 0px;
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: "Coda";
+  letter-spacing: 0.12em;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: left;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+  }
+}
+
+.voterDetails,
+.candidateDetails {
+  z-index: 10;
+  box-shadow: 4px 4px 5px 1px #9b9b9ba6;
+  background-color: rgba(144, 47, 201, 0.979);
+  backdrop-filter: blur(6px);
+  border-radius: 0.67rem 0.67rem 0.67rem 0.67rem;
+  font-size: 15px;
+  font-family: 'Lucida console';
+  letter-spacing: 0.07em;
+  color: #ffffff;
+
+}
+
+.word {
+  font-size: 17px;
+  font-family: 'Lucida console';
+  letter-spacing: 0.11em;
+  padding: 6px 5px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.timeZone {
+  position: fixed;
+  top: 120px;
+  right: 35px;
+  width: 100px;
+  height: 30px;
+}
+
+
+
+.timer {
+  display: flex;
+  flex: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer div:first-child {
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+  text-align: center;
+
+}
+
+.timer div section,
+.timer div span {
+  width: 17.25px;
+  height: 27px;
+}
+
+.button-no-btstrp {
+  border-radius: 10px;
+  width: 100%;
+  height: 36px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: rgba(144, 47, 201, 0.979);
+  box-shadow: 0 1px 2px 1px white;
+}
+
+
+.mySpinner {
+  height: 75px;
+  width: 75px;
+}
+
+.myImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: 1%;
+  left: 35%;
+}
+
+.sidebarContent {
+  position: relative;
+  top: 22%;
+  left: 1%;
+
+}
+
+.sidebarText {
+  text-decoration: none;
+  font-family: 'Ubuntu Mono';
+  font-size: x-large;
+  color: orange;
+}
+
+.results {
+  font-family: 'Ubuntu Mono';
+  font-size: medium;
+  font-weight: 50;
+  color: whitesmoke;
+  background-color: rgba(144, 47, 201, 0.979);
+}
+
+.registerText{
+  font-family: 'Ubuntu Mono';
+  font-size:large;
+  font-weight: 200;
+  color: rgba(144, 47, 201, 0.979);
+  padding:0.4rem 0;
+}
