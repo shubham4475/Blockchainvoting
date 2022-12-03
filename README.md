@@ -1,4 +1,4 @@
-# blockVoteSP
+# blockVote
 This decentralised application is created as a part of a college project. It is sample implementation of the BlockChain technology on the traditional voting system.
 * This application will help, carry out election process tamper-proof 🔐.
 * All the related data/records are maintained on blockchain ledger 📒 (once wrote cannot be erased).
